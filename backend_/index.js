@@ -77,8 +77,8 @@ import cors from 'cors';
 import connectDB from './src/config/db.js';
 import userRouter from './src/routes/user.routes.js';
 import songRouter from './src/routes/songRoutes.js';
-import playlistRouter from './src/routes/playlistRoutes.js';
-import albumRouter from './src/routes/albumRoutes.js';
+// import playlistRouter from './src/routes/playlistRoutes.js';
+// import albumRouter from './src/routes/albumRoutes.js';
 import cookieParser from 'cookie-parser';
 
 dotenv.config();
@@ -98,7 +98,7 @@ app.use(cors({
 app.use("/api/users", userRouter);
 app.use("/api/music", songRouter);
 // app.use("/api/playlists", playlistRouter);
-app.use("/api/albums", albumRouter);
+// app.use("/api/albums", albumRouter);
 
 app.get('/', (req, res) => {
   res.status(200).send('Welcome to the Spotify App');
