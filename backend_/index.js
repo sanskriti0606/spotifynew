@@ -97,7 +97,7 @@ app.use(cors({
 
 app.use("/api/users", userRouter);
 app.use("/api/music", songRouter);
-app.use("/api/playlists", playlistRouter);
+// app.use("/api/playlists", playlistRouter);
 app.use("/api/albums", albumRouter);
 
 app.get('/', (req, res) => {
